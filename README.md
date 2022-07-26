@@ -1,3 +1,5 @@
 # Goodreads Scraper
 
-Web-scraping project that takes a book ID and returns a list of similar books.
+Finding new books has been really hard, more difficult than reading consistently. This GoodReads scraper combines multiple features of the platform to produce a list of similar books. On the page for any particular book, there are many sections of related books: "similar books", "lists with this book", "genres", etc. I found that the "see similar books" list gathered by GoodReads and the lists including the particular books made by members helf the most interesting reads. The list produced by the script includes books from the similar books list and the first 5 books from the first 5 lists with the given book.
+
+To run this script, first run `pip install -r requirements.txt`. Navigate to the page of your favorite book on `goodreads.com` and take the numerical ID that comes before the book's title. Take The Giving Tree by Shel Silverstein as an example. It's goodreads page is `https://www.goodreads.com/book/show/370493-the-giving-tree`. To get a list of books similar to this one, run `python next_books.py 370493 <your_output_file.txt>`.
